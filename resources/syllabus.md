@@ -46,7 +46,7 @@ hide:
 ## Location
 
 - Where it will be available
-- physical location
+- Physical location
 - URL link to resources (and virtual room if online) should lead to the learning Skills4EOSC platform
 
 ## Training Description

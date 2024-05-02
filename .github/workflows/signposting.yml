@@ -16,17 +16,23 @@ jobs:
         uses: mikefarah/yq@v4.34.2
         with:
           cmd: |
-            gh_pages_url="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/latest/"
-            signposting_profile=$(yq e '.signposting_default_profile' mkdocs.yml)
-            echo "GH pages url: ${gh_pages_url}"
-            echo "Signposting profile: ${signposting_profile}"
+            gh_pages_url=$(yq e '.signposting_gitbook_url' mkdocs.yml)
+            if [[ -z $gh_pages_url ]]; then
+              gh_pages_url="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/latest/"
+            fi
             echo "GH_PAGES_URL=${gh_pages_url}" >> $GITHUB_ENV
+            signposting_profile=$(yq e '.signposting_default_profile' mkdocs.yml)
+            if [[ -z $signposting_profile ]]; then
+              echo "SIGNPOSTING_PROFILE=${signposting_profile}" >> $GITHUB_ENV
+            fi
 
       - name: Extract information
         uses: korvoj/signposting@1.0.0
         with:
-          default-profile-discovered-items: 'https://raw.githubusercontent.com/my-test.example'
-          github-pages-url: 'https://fair-by-design-methodology.github.io/MVS/latest/'
+          # default-profile-discovered-items: 'https://raw.githubusercontent.com/my-test.example'
+          # github-pages-url: 'https://fair-by-design-methodology.github.io/MVS/latest/'
+          default-profile-discovered-items: ${{ env.SIGNPOSTING_PROFILE }}
+          github-pages-url: ${{ env.GH_PAGES_URL }}
 
       - name: Get linkset.json path
         run: |
