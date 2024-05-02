@@ -59,9 +59,9 @@ citation:
     - thesecondkeyword
     - "a third keyword"
   repository: "https://github.com/citation-file-format/my-research-software"
-signposting_linkset: https://raw.githubusercontent.com/FAIR-by-Design-Demo/spostdemo/main/linkset.json
-signposting_default_profile: ""
-# signposting_gitbook_url: https://gitbook.example.com
+signposting_linkset: https://raw.githubusercontent.com/FAIR-by-Design-Demo/spostdemo/main/linkset.json # do not update manually
+signposting_default_profile: "" # update with an URL towards the profile used for the Markdown pages
+# signposting_gitbook_url: https://gitbook.example.com # leave commented if using GitHub Pages with the default domain
 signposting_exclusions:
   - 'venv/**'
   - 'external-resources/**'
@@ -72,3 +72,4 @@ signposting_exclusions:
   - '02 process_description.md'
   - '03 glossary.md'
   - 'template_unit_lesson_plan.md'
+  - '*facilitator_guide.md'
