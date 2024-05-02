@@ -74,5 +74,5 @@ signposting_exclusions:
   - 'template_unit_lesson_plan.md'
   - '*facilitator_guide.md'
   - '*syllabus.md'
-  - '*lesson_plan.md'
-  - 'template_content.md'
+  - '**/*lesson_plan.md'
+  - '**/template_content.md'
