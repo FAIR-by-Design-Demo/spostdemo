@@ -41,7 +41,7 @@ hide:
 
 ## Date/Time: when it will be offered
 
-- put available from date if it is self-paced
+- Put available from date if it is self-paced
 
 ## Location
 
