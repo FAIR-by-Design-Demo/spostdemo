@@ -18,9 +18,9 @@ jobs:
           cmd: |
             gh_pages_url="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/latest/"
             signposting_profile=$(yq e '.signposting_default_profile' mkdocs.yml)
-            echo "GH pages url: ${gh_pages_url,,}"
+            echo "GH pages url: ${gh_pages_url}"
             echo "Signposting profile: ${signposting_profile}"
-            echo "GH_PAGES_URL=${gh_pages_url,,}" >> $GITHUB_ENV
+            echo "GH_PAGES_URL=${gh_pages_url}" >> $GITHUB_ENV
 
       - name: Extract information
         uses: korvoj/signposting@1.0.0
