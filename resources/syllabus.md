@@ -68,7 +68,7 @@ hide:
 
 ## Duration
 
-- total training duration
+- Total training duration
 
 ## Training objectives
 
