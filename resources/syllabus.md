@@ -72,7 +72,7 @@ hide:
 
 ## Training objectives
 
-- list of specific training objectives
+- List of specific training objectives
 
 ## Keywords
 

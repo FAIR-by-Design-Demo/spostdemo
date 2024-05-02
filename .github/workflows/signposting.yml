@@ -33,15 +33,8 @@ jobs:
       - name: Extract information
         uses: korvoj/signposting@1.0.0
         with:
-          # default-profile-discovered-items: 'https://raw.githubusercontent.com/my-test.example'
-          # github-pages-url: 'https://fair-by-design-methodology.github.io/MVS/latest/'
           default-profile-discovered-items: ${{ env.SIGNPOSTING_PROFILE }}
           github-pages-url: ${{ env.GH_PAGES_URL }}
-
-      # - name: Get linkset.json path
-      #   run: |
-      #     linkset_path="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_REF_NAME/linkset.json"
-      #     echo "LINKSET_URL=$linkset_path" >> $GITHUB_ENV
 
       - name: Update variables
         uses: mikefarah/yq@v4.34.2
