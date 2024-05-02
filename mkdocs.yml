@@ -55,11 +55,11 @@ citation:
   license-url: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
   type: generic
   keywords:
-  - thefirstkeyword
-  - thesecondkeyword
-  - "a third keyword"
+    - thefirstkeyword
+    - thesecondkeyword
+    - "a third keyword"
   repository: "https://github.com/citation-file-format/my-research-software"
-signposting_linkset: https://raw.githubusercontent.com/FAIR-by-Design-Methodology/MVS/main/linkset.json
+signposting_linkset: https://raw.githubusercontent.com/FAIR-by-Design-Demo/spostdemo/main/linkset.json
 signposting_exclusions:
   - 'venv/**'
   - 'external-resources/**'
