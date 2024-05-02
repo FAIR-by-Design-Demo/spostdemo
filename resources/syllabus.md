@@ -64,7 +64,7 @@ hide:
 
 ## Prerequisites
 
-- if any
+- If any
 
 ## Duration
 

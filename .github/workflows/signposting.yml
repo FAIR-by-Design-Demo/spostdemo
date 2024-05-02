@@ -23,7 +23,7 @@ jobs:
             gh_pages_url=$(echo "$gh_pages_url" | tr '[:upper:]' '[:lower:]')
             echo "GH_PAGES_URL=${gh_pages_url}" >> $GITHUB_ENV
             signposting_profile=$(yq e '.signposting_default_profile' mkdocs.yml)
-            if [[ -n $signposting_profile && $signposting_profile != "null"]]; then
+            if [[ -n $signposting_profile && $signposting_profile != "null" ]]; then
               echo "SIGNPOSTING_PROFILE=${signposting_profile}" >> $GITHUB_ENV
             fi
             linkset_path="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_REF_NAME/linkset.json"
