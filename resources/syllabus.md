@@ -52,7 +52,7 @@ hide:
 ## Training Description
 
 - What is the main goal/purpose of this training
-- short training description
+- Short training description
 
 ## Target audience: target audience description
 

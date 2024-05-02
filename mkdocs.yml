@@ -67,6 +67,7 @@ signposting_exclusions:
   - 'external-resources/**'
   - 'Feedback/**'
   - 'Activities/**'
+  - 'Assessment/**'
   - 'index.md'
   - '02 process_description.md'
   - '03 glossary.md'
