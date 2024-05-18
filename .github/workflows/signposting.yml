@@ -31,7 +31,7 @@ jobs:
             echo "The profile is ${signposting_profile}"
 
       - name: Extract information
-        uses: korvoj/signposting@1.0.0
+        uses: korvoj/signposting@profile-improvements
         with:
           default-profile-discovered-items: ${{ env.SIGNPOSTING_PROFILE }}
           github-pages-url: ${{ env.GH_PAGES_URL }}
