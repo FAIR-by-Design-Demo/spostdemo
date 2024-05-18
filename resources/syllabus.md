@@ -92,7 +92,7 @@ Keywords or tags used to describe the training.
 
 ## Resources and Materials
 
-- location of available resources for the training
+- Location of available resources for the training
 
 ## Certification Information
 
